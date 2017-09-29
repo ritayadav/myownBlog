@@ -14,20 +14,16 @@ excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef 
 
 feature_row2:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Left Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
+    alt: "Clock Calendar"
+    title: "Clock Calendar"
+    excerpt: 'This application shows current time, Nepalese date, English date, converts Nepalese to English date and vice-versa. It also helps to calculate the time period and save messages to remind at specific time and date. It supports x86 and x64 architectures.'
+    cta_label: "Download"
+    cta_url: "https://github.com/mmistakes/minimal-mistakes/"
     url: "#test-link"
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
 
-{% include feature_row id="intro" type="center" %}
-
-{% include feature_row %}
-
 {% include feature_row id="feature_row2" type="left" %}
 
-{% include feature_row id="feature_row3" type="right" %}
 
-{% include feature_row id="feature_row4" type="center" %}
