@@ -12,7 +12,7 @@ header:
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
 
-feature_row2:
+feature_row:
   - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
     alt: "Clock Calendar"
     title: "Clock Calendar"
@@ -22,8 +22,13 @@ feature_row2:
     url: "#test-link"
     btn_label: "Read More"
     btn_class: "btn--primary"
+posts: 
+  - url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 ---
 
-{% include feature_row id="feature_row2" type="left" %}
+{% include feature_row id="feature_row" type="left" %}
+{% include feature_row id="posts" type="center" %}
 
 
