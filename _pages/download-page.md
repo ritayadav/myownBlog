@@ -14,7 +14,7 @@ feature_row:
   - image_path: /assets/images/ClockCalendar.png
     alt: "Clock Calendar"
     title: "Clock Calendar"
-    excerpt: 'It\'s a Nepalese calendar with date coverter and reminder.'
+    excerpt: 'It is a Nepalese calendar with date coverter and reminder.'
     url: "https://github.com/maheshdharhari/Clock-Calendar/releases/download/1.0.0.1/Clock.Calendar.msi"
     btn_label: "Download"
     btn_class: "btn--info"
