@@ -11,11 +11,11 @@ header:
 excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
 
 feature_row:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+  - image_path: /assets/images/ClockCalendar.png
     alt: "Clock Calendar"
     title: "Clock Calendar"
     excerpt: 'This application shows current time, Nepalese date, English date, converts Nepalese to English date and vice-versa. It also helps to calculate the time period and save messages to remind at specific time and date. It supports x86 and x64 architectures.'
-    url: "#test-link"
+    url: "https://github.com/maheshdharhari/Clock-Calendar/releases/download/1.0.0.1/Clock.Calendar.msi"
     btn_label: "Download"
     btn_class: "btn--info"
 posts: 
