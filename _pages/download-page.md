@@ -8,18 +8,15 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/unsplash-image-1.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: "The downloaded version of Application defaults to an evaluation version, and it is fully enabled as a licensed version. It is supported on Windows XP - Windows 10 and works on both 32 and 64 bit variations."
+excerpt: "The downloaded version of Application defaults to an evaluation version and it is fully enabled as a licensed version. It is supported on Windows XP - Windows 10 and works on both 32 and 64 bit variations."
 
 feature_row:
   - image_path: /assets/images/ClockCalendar.png
     alt: "Clock Calendar"
     title: "Clock Calendar"
-    excerpt: 'This application shows current time, Nepalese date, English date, converts Nepalese to English date and vice-versa. It also helps to calculate the time period and save messages to remind at specific time and date. It supports x86 and x64 architectures.'
     url: "https://github.com/maheshdharhari/Clock-Calendar/releases/download/1.0.0.1/Clock.Calendar.msi"
     btn_label: "Download"
     btn_class: "btn--info"
 ---
 
 {% include feature_row id="feature_row" type="left" %}
-
-
