@@ -8,7 +8,7 @@ header:
   overlay_filter: "0.5"
   overlay_image: /assets/images/unsplash-image-1.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
-excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
+excerpt: "The downloaded version of Application defaults to an evaluation version, and it is fully enabled as a licensed version. It is supported on Windows XP - Windows 10 and works on both 32 and 64 bit variations."
 
 feature_row:
   - image_path: /assets/images/ClockCalendar.png
@@ -18,13 +18,8 @@ feature_row:
     url: "https://github.com/maheshdharhari/Clock-Calendar/releases/download/1.0.0.1/Clock.Calendar.msi"
     btn_label: "Download"
     btn_class: "btn--info"
-posts: 
-  - url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
 ---
 
 {% include feature_row id="feature_row" type="left" %}
-{% include feature_row id="posts" type="center" %}
 
 
