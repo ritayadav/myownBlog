@@ -11,7 +11,7 @@ header:
 excerpt: "The downloaded version of Application defaults to an evaluation version and it is fully enabled as a licensed version. It is supported on Windows XP - Windows 10 and works on both 32 and 64 bit variations."
 
 feature_row:
-  - image_path: /assets/images/ClockCalendar.png
+  - image_path: /assets/images/ClockCalendar.jpg
     alt: "Clock Calendar"
     title: "Clock Calendar"
     excerpt: 'It is a Nepalese calendar with date coverter and reminder.'
