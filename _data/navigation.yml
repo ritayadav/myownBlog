@@ -4,8 +4,8 @@ main:
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
     url: /about/
-  - title: "Download"
-    url: /download-page/
+  - title: "My Apps"
+    url: https://apps.maheshyadav.com.np/
   # - title: "Sample Posts"
   #  url: /year-archive/
   # - title: "Archive"
