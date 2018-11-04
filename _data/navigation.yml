@@ -4,10 +4,10 @@ main:
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "Gallery"
     url: https://gallery.maheshyadav.com.np/
-  - title: "About"
-    url: /about/
   - title: "Apps"
     url: https://apps.maheshyadav.com.np/
+  - title: "About"
+    url: /about/
   # - title: "Sample Posts"
   #  url: /year-archive/
   # - title: "Archive"
