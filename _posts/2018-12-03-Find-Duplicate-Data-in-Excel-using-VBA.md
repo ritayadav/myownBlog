@@ -1,12 +1,13 @@
 ---
 title: "Find and Highlight Duplicate Values in Excel using VBA (macro)"
 modified: 2018-12-03T03:55:10-04:00
-permalink: /posts/2018/12/Find and Highlight Duplicate Values in Excel using VBA/
+permalink: /posts/2018/12/Find and Highlight Duplicate Values in Excel using VBA (macro)/
 categories: 
   - Excel
   - Windows
 tags:
   - Visual Basic
+  - Macro
 ---
 
 Android Studio is the official IDE for Android. It’s open-source, distributed under the Apache license. This tutorial is going to show you how to install Android Studio on Ubuntu 16.04.
