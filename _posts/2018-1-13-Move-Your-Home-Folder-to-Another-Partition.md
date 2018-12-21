@@ -22,7 +22,7 @@ sudo fdisk /dev/sda
 
 These are Generic commands:
 
-   d   delete a partition
+   d   delete a partition  
    F   list free unpartitioned space
    l   list known partition types
    n   add a new partition
@@ -33,10 +33,10 @@ These are Generic commands:
 
 These are steps to create partion.
 
-1. Press n to create new partion
+1. Press n to create new partion;
 2. Enter value of partion type;
 3. Enter the value of first cylinder or just press enter;
-4. Enter the value partion size
+4. Enter the value partion size;
 5. Enter w to write partion table
 
 Partion is read now we should format it to use.
@@ -52,6 +52,7 @@ sudo mkdir /mnt/tmp
 sudo mount /dev/sdb9 /mnt/tmp
 
 Copy HOME to the new location:
+
 sudo rsync -avx /home/ /mnt/tmp
 
 sudo cp -aR /home/* /mnt/tmp
@@ -62,16 +63,16 @@ sudo diff -r /home /srv/home
 
 Afterwards, delete all the old content in the /home as follows.
 
-# sudo rm -rf /home/*
+### sudo rm -rf /home/*
 
 Next unmount mnt/tmp.
 
-# sudo umount mnt/tmp
+### sudo umount mnt/tmp
 
 Finally, we have to mount the filesystem /dev/sdb1 to /home for the mean time.
 
-# sudo mount /dev/sdb9 /home
-# sudo ls -l /home
+### sudo mount /dev/sdb9 /home
+### sudo ls -l /home
 The above changes will last only for the current boot, add the line below in the /etc/fstab to make the changes permanent.
 
 Use following command to get the partition UUID.
@@ -102,4 +103,4 @@ Save the file and reboot the system.
 
 You can run following command to see that /home directory has been successfully moved into a dedicated partition.
 
-# sudo df -hl
+### sudo df -hl
