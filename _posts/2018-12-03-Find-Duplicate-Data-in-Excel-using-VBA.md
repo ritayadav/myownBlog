@@ -2,10 +2,11 @@
 title: "Find and Highlight Duplicate Values in Excel using VBA (macro)"
 modified: 2018-12-03T03:55:10-04:00
 permalink: /posts/2018/12/Find and Highlight Duplicate Values in Excel using VBA/
-tags:
-  - Windows
+categories: 
   - Excel
-  - Visual Basic
+  - Windows
+tags:
+   - Visual Basic
   - Macro
 ---
 

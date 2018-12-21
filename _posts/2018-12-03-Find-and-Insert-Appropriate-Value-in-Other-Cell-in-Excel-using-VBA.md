@@ -2,9 +2,10 @@
 title: "Find and Insert Appropriate Value in Other Cell in Excel using VBA (Micro)"
 modified: 2018-12-03T03:55:10-04:00
 permalink: /posts/2018/12/Find and Insert Appropriate Value in Other Cell in Excel using VBA (Micro)/
-tags:
-  - Windows
+categories: 
   - Excel
+  - Windows
+tags:
   - Visual Basic
   - Macro
 ---

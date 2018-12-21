@@ -2,8 +2,9 @@
 title: "Move Home Folder to Another Partition"
 modified: 2018-1-13T03:55:10-04:00
 permalink: /posts/2018/1/Move Home Folder to Another Partition/
-tags:
+categories: 
   - Linux
+tags:
   - Home Partition
 ---
 
