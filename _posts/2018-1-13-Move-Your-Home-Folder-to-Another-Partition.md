@@ -42,18 +42,21 @@ These are steps to create partion.
 Partion is read now we should format it to use.
 
 To format we use
+
 sudo mkfs.ext4 /dev/sda9
 {: .notice}
 assuming /sdb9 is the new partition for HOME
 Select right partion to format otherwise data will be lost.
 
 Temporarily mount the new partition:
+
 sudo mkdir /mnt/tmp
 {: .notice}
 sudo mount /dev/sdb9 /mnt/tmp
 {: .notice}
 
 Copy HOME to the new location:
+
 sudo rsync -avx /home/ /mnt/tmp
 {: .notice}
 sudo cp -aR /home/* /mnt/tmp
@@ -70,7 +73,7 @@ Next unmount mnt/tmp.
 
 sudo umount mnt/tmp
 {: .notice}
-Finally, we have to mount the filesystem /dev/sdb1 to /home for the mean time.
+Finally, we have to mount the filesystem /dev/sdb9 to /home for the mean time.
 
 sudo mount /dev/sdb9 /home
 {: .notice}
@@ -88,7 +91,7 @@ sudo nano /etc/fstab   #or any other editor
 {: .notice}
 and add the following line at the end:
 
-UUID=<noted number from above>    /home    ext4    defaults   0  2
+UUID=<noted number from above>    	/home    	ext4    	defaults   0  2
 
 Take care to choose the appropriate filesystem here, e.g. ext3 if ext3 formatted
 
