@@ -43,45 +43,49 @@ Partion is read now we should format it to use.
 
 To format we use
 sudo mkfs.ext4 /dev/sda9
-
+{: .notice}
 assuming /sdb9 is the new partition for HOME
 Select right partion to format otherwise data will be lost.
 
 Temporarily mount the new partition:
 sudo mkdir /mnt/tmp
+{: .notice}
 sudo mount /dev/sdb9 /mnt/tmp
+{: .notice}
 
 Copy HOME to the new location:
-
 sudo rsync -avx /home/ /mnt/tmp
-
+{: .notice}
 sudo cp -aR /home/* /mnt/tmp
-
+{: .notice}
 After that, we will find the difference between the two directories using the diff tool, if all is well, continue to the next step.
 
 sudo diff -r /home /srv/home
-
+{: .notice}
 Afterwards, delete all the old content in the /home as follows.
 
-### sudo rm -rf /home/*
-
+sudo rm -rf /home/*
+{: .notice}
 Next unmount mnt/tmp.
 
-### sudo umount mnt/tmp
-
+sudo umount mnt/tmp
+{: .notice}
 Finally, we have to mount the filesystem /dev/sdb1 to /home for the mean time.
 
-### sudo mount /dev/sdb9 /home
-### sudo ls -l /home
+sudo mount /dev/sdb9 /home
+{: .notice}
+sudo ls -l /home
+{: .notice}
 The above changes will last only for the current boot, add the line below in the /etc/fstab to make the changes permanent.
 
 Use following command to get the partition UUID.
 
 sudo blkid /dev/sdb9
-
+{: .notice}
 Once you know the partition UUID, open /etc/fstab file add following line.
 
 sudo nano /etc/fstab   #or any other editor
+{: .notice}
 and add the following line at the end:
 
 UUID=<noted number from above>    /home    ext4    defaults   0  2
@@ -103,4 +107,5 @@ Save the file and reboot the system.
 
 You can run following command to see that /home directory has been successfully moved into a dedicated partition.
 
-### sudo df -hl
+sudo df -hl
+{: .notice}
