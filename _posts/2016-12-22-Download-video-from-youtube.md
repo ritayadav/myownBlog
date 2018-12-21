@@ -1,5 +1,8 @@
 ---
 title:  "Download video from youtube in UBUNTU (Linux)"
+header:
+  teaser: https://c4.staticflickr.com/1/754/31801541395_6f9d2e0f36_b.jpg
+  og_image: https://c4.staticflickr.com/1/754/31801541395_6f9d2e0f36_b.jpg
 modified: 2016-12-22T16:03:49-04:00
 categories: 
   - Linux
