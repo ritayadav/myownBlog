@@ -21,8 +21,8 @@ title_separator          : "-"
 name                     : "Mahesh Kr. Yadav"
 description              : "I am a Web Designer & Web Developer. I am originally from Dharhari, a little village located in Rautahat district of Nepal."
 url                      : "https://blog.maheshyadav.com.np" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # "/newBlog" # the subpath of your site, e.g. "/blog"
-repository               : "ritayadav/newBlog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+baseurl                  : # "/myOwnBlog" # the subpath of your site, e.g. "/blog"
+repository               : "ritayadav/myOwnBlog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
