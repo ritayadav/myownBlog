@@ -31,22 +31,22 @@ These are Generic commands:
    v   verify the partition table
    i   print information about a partition
 
-These are steps to create partion.
+These are steps to create Partition.
 
-1. Press n to create new partion;
-2. Enter value of partion type;
+1. Press n to create new Partition;
+2. Enter value of Partition type;
 3. Enter the value of first cylinder or just press enter;
-4. Enter the value partion size;
-5. Enter w to write partion table
+4. Enter the value Partition size;
+5. Enter w to write Partition table
 
-Partion is read now we should format it to use.
+Partition is read now we should format it to use.
 
 To format we use
 
 sudo mkfs.ext4 /dev/sda9
 {: .notice}
 assuming /sdb9 is the new partition for HOME
-Select right partion to format otherwise data will be lost.
+Select right Partition to format otherwise data will be lost.
 
 Temporarily mount the new partition:
 
@@ -63,7 +63,7 @@ sudo cp -aR /home/* /mnt/tmp
 {: .notice}
 After that, we will find the difference between the two directories using the diff tool, if all is well, continue to the next step.
 
-sudo diff -r /home /srv/home
+sudo diff -r /home /mnt/tmp/home
 {: .notice}
 Afterwards, delete all the old content in the /home as follows.
 
@@ -79,7 +79,7 @@ sudo mount /dev/sdb9 /home
 {: .notice}
 sudo ls -l /home
 {: .notice}
-The above changes will last only for the current boot, add the line below in the /etc/fstab to make the changes permanent.
+The above changes will last only for the current boot, make some changes in the /etc/fstab to make the changes permanent.
 
 Use following command to get the partition UUID.
 
@@ -96,16 +96,22 @@ UUID=<noted number from above>    	/home    	ext4    	defaults   0  2
 Take care to choose the appropriate filesystem here, e.g. ext3 if ext3 formatted
 
 Reboot
+
 After a reboot, your /home resides on the new drive having plenty of space.
 
 Explaining the field in the line above:
 
 UUID – specifies the block device, you can alternatively use the device file /dev/sdb1.
 /home – this is the mount point.
+
 etx4 – describes the filesystem type on the device/partition.
+
 defaults – mount options, (here this value means rw, suid, dev, exec, auto, nouser, and async).
+
 0 – used by dump tool, 0 meaning don’t dump if filesystem is not present.
+
 2 – used by fsck tool for discovering filesystem check order, this value means check this device after root filesystem.
+
 Save the file and reboot the system.
 
 You can run following command to see that /home directory has been successfully moved into a dedicated partition.
