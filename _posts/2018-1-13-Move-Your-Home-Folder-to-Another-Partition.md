@@ -19,17 +19,17 @@ One of the good practice is to give the Home folder its own partition, so whatev
 fdisk is started by typing (as root or sudoer) fdisk device at the command prompt. device might be something like /dev/hda or /dev/sda
 
 sudo fdisk /dev/sda 
-
+{: .notice}
 These are Generic commands:
 
-   d   delete a partition  
-   F   list free unpartitioned space
-   l   list known partition types
-   n   add a new partition
-   p   print the partition table
-   t   change a partition type
-   v   verify the partition table
-   i   print information about a partition
+   d    delete a partition  
+   F    list free unpartitioned space
+   l    list known partition types
+   n    add a new partition
+   p    print the partition table
+   t    change a partition type
+   v    verify the partition table
+   i    print information about a partition
 
 These are steps to create Partition.
 
@@ -95,10 +95,6 @@ UUID=<noted number from above>    	/home    	ext4    	defaults   0  2
 
 Take care to choose the appropriate filesystem here, e.g. ext3 if ext3 formatted
 
-Reboot
-
-After a reboot, your /home resides on the new drive having plenty of space.
-
 Explaining the field in the line above:
 
 UUID – specifies the block device, you can alternatively use the device file /dev/sdb1.
@@ -113,7 +109,7 @@ defaults – mount options, (here this value means rw, suid, dev, exec, auto, no
 2 – used by fsck tool for discovering filesystem check order, this value means check this device after root filesystem.
 
 Save the file and reboot the system.
-
+After a reboot, your /home resides on the new drive having plenty of space.
 You can run following command to see that /home directory has been successfully moved into a dedicated partition.
 
 sudo df -hl
