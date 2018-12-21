@@ -6,6 +6,7 @@ tags:
   - Windows
   - Excel
   - Visual Basic
+  - Macro
 ---
 
 Android Studio is the official IDE for Android. It’s open-source, distributed under the Apache license. This tutorial is going to show you how to install Android Studio on Ubuntu 16.04.
