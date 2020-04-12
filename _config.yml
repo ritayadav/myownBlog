@@ -306,3 +306,8 @@ defaults:
       layout: single
       author_profile: true
 #     author: Billy Rick
+
+# Outputting
+permalink: /:categories/:title/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
