@@ -12,22 +12,25 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en"
+locale                   : "en-US"
 title                    : "Mahesh Kumar Yadav / Blog"
 title_separator          : "-"
-name                     : "Mahesh Kr. Yadav"
+subtitle                 : "Blog"
+name                     : "Mahesh Kumar Yadav"
 description              : "I am a Web Designer & Web Developer. I am originally from Dharhari, a little village located in Rautahat district of Nepal."
 url                      : "https://blog.maheshyadav.com.np" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # "/myOwnBlog" # the subpath of your site, e.g. "/blog"
-repository               : "ritayadav/myOwnBlog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : "ritayadav/myblog419"# GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : "/assets/images/500x300.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -37,23 +40,12 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "master"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}" # "/_data/comments/{options.slug}" (default)
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : #"iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-  endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  staticman:
+    branch               :  "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
   siteKey                : "6LebSHsUAAAAAIXS8OQIiOdmXF_s3c-CoOPr14Vg"
   secret                 : "6LebSHsUAAAAAEbQLEj5ekHUa1ZDtH9fNcvvckat"
@@ -102,7 +94,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Mahesh Kr. Yadav"
+  name             : "Mahesh Kumar Yadav"
   avatar           : "/assets/images/profile.jpg"
   bio              : "Programmer"
   location         : "Kathmandu, NP"
@@ -126,9 +118,6 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/maheshdharhari"
-    - label: "Google+"
-      icon: "fab fa-fw fa-google-plus-square"
-      url: "https://plus.google.com/+MaheshKumarYadavDharhari"
     - label: "Dribble"
       icon: "fab fa-fw fa-dribbble"
       url: "https://dribbble.com/maheshdharhari"
@@ -308,3 +297,12 @@ defaults:
       comments: true
       share: true
       related: true
+#     author: Billy Rick
+ # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+#     author: Billy Rick
