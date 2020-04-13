@@ -1,7 +1,7 @@
 ---
 title: "Install Jekyll on Ubuntu (Linux)"
 modified: 2016-11-22T09:55:10-04:00
-permalink: /posts/2016/11/Install Jekyll on Ubuntu/
+permalink: /2016/11/Install Jekyll on Ubuntu/
 categories: 
   - Linux
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "Install Android Studio on Ubuntu"
 modified: 2017-06-01T03:55:10-04:00
-permalink: /posts/2016/11/Install Android Studio on Ubuntu/
+permalink: /2016/11/Install Android Studio on Ubuntu/
 categories: 
   - Linux
 tags:
