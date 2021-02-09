@@ -1,0 +1,13 @@
+Own
+-------------------------
+assets/images
+_data
+_includes/footer.html
+_includes/head/custom.html
+staticman.yml
+_config.yml
+_pages
+_posts
+CNAME
+favicon.ico
+
